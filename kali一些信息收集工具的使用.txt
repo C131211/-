@@ -1,0 +1,20 @@
+1.desenum
+它可以对目标站进行子域名的猜解，kali下自带默认字典
+
+desenum '域名' -f '字典路径' --dnsserver 8.8.8.8
+
+
+2.traceroute
+类似于win下的工具
+它可以追踪路由
+
+tcptraceroute www.baidu.com
+
+
+3.netenum 
+用来扫描存活主机，局域网下速度非常快
+netenum 10.12.0.0/21 3 1
+后面3 1 表示详细程度
+
+
+4.nmap
